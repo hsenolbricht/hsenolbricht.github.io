@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+      <link rel="stylesheet" href="styles.css">
+    </head>
+
+
+
+
+    <!-- SIDE BAR-->
+  <div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="width:250px;" id="mySidebar">
+    <button class="w3-bar-item w3-button w3-hide-large" onclick="w3_close()">Close &times;</button>
+    <div class="w3-container">  
+        <h2><img src="_images/glasslogo.png"  width="170" height="90"></h2>
+         <p> </p>  
+       </div>
+      <dl>
+        <dt>
+            <a href="index_sm.html" class="w3-bar-item w3-button">HOME</a>
+            <a href="adm.html" class="w3-bar-item w3-button">Automation Documents & Manuals</a>
+            <a href="mmm.html" class="w3-bar-item w3-button">Maintenance and Mechanics Manuals</a>
+                <dd>
+                    <a href="https://docs.google.com/spreadsheets/d/e/2PACX-1vT7LrAwaIgswav1VPDwK1B8RxbzXH2STc_BI0m6o6QI-UdMadrZ5lxppJrSKtcfPBeBIcvrq_xfswXw/pubhtml" class="w3-bar-item w3-button">PART LIST</a>
+ 
+                    <!--
+                    <a href="mmm/160.pdf" class="w3-bar-item w3-button">160 Gripper</a>
+                    <a href="mmm/180.pdf" class="w3-bar-item w3-button">180 Turn Table</a>
+                    <a href="mmm/210.pdf" class="w3-bar-item w3-button">210 Hydraulic Lift</a>
+                    <a href="mmm/220.pdf" class="w3-bar-item w3-button">220 Telescopic Fork</a>
+                    -->
+
+                </dd>
+            <a href="rmd.html" class="w3-bar-item w3-button">Robot Manual Documents</a>
+            <a href="cm.html" class="w3-bar-item w3-button">Camera Manuals</a>
+            <a href="cad.html" class="w3-bar-item w3-button">CAD</a>
+        </dt>    
+    </dl>
+  </div>
+
+  
+
+
+
+
+
+<!-- HEADER -->
+  <div class="w3-main" style="margin-left:250px">
+    <div class="w3-teal">
+      <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+        <div class="w3-container">
+      <h1>Maintenance and Mechanics Manuals</h1>     
+        </div>
+    </div>
+  </div>
+  
+
+
+
+<!-- MAIN -->
+
+<div class="w3-main" style="margin-left:250px">
+<dd>
+  <a href="mmm/150.pdf" class="w3-bar-item w3-button">
+    <img src="_images/_150.JPG" width="300" height="300">
+    <p>150 Lifting Conveyor</p>
+    </a>
+  <a href="mmm/160.pdf" class="w3-bar-item w3-button"><img src="_images/_160.JPG" width="300" height="300"><p>160 Gripper</p></a>
+  <a href="mmm/180.pdf" class="w3-bar-item w3-button"><img src="_images/_180.JPG" width="300" height="300"><p>180 Turn Table</p></a>
+  <a href="mmm/210.pdf" class="w3-bar-item w3-button"><img src="_images/_210.JPG" width="300" height="300"><p>210 Hydraulic Lift</p></a>
+  <a href="mmm/220.pdf" class="w3-bar-item w3-button"><img src="_images/_220.JPG" width="300" height="300"><p>220 Telescopic Fork</p></a>
+</dd>
+</div>
+
+
+
+
+<!--
+  <div class="w3-container" style="margin-left: 250px;">
+    <h3>Responsive Sidebar</h3>
+    <p>The sidebar in this example will always be displayed on screens wider than 992px, and hidden on tablets or mobile phones (screens less than 993px wide).</p>
+    <p>On tablets and mobile phones the sidebar is replaced with a menu icon to open the sidebar.</p>
+    <p>The sidebar will overlay of the page content.</p>
+    <p><b>Resize the browser window to see how it works.</b></p>
+  </div>
+    --> 
+
+
+
+
+
+
+  <script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+  
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  </script>
+
+
+

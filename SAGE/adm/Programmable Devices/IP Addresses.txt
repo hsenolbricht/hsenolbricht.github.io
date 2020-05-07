@@ -1,0 +1,34 @@
+PLC:192.168.50.182
+HMI1:192.168.50.183
+HMI2:192.168.50.184
+South Clean Room HMI:192.168.50.186
+Barcode Read M150:192.168.50.188
+Camera:192.168.50.189
+Servo Power Supply:192.168.50.190
+M150Lift and M180TurnTable Servo Driver:192.168.50.191
+M180TiltA and M180TiltB Servo Driver:192.168.50.192
+M110Lift and M110Conv Servo Driver:192.168.50.193
+M120Lift and M120Conv Servo Driver:192.168.50.194
+M130Conv and M150Conv Servo Driver:192.168.50.195
+M170Conv and M200ELevator Servo Driver:192.168.50.196
+M190LinAx Servo Driver and Spare:192.168.50.197
+KRC4 Robot:192.168.50.199
+KRC4 I/O Link Master Module:192.168.50.200
+EuroForkLifter AC Driver:192.168.50.201
+EuroForkHorizontal AC Driver:192.168.50.202
+Spare AC Driver:192.168.50.203
+EuoforkConv Encoder:192.168.50.204
+TurnTable BarcodeScanner:192.168.50.205
+EuroFork BarcodeScanner:192.168.50.206
+EdgeMeasurementKeyenceM170:192.168.50.207
+CPX-FB36 Festo Controller:192.168.50.208
+Allen-Bradley Managed Switch:https:192.168.50.209
+Point 1 I/O:192.168.50.211
+Point 2 I/O:192.168.50.212
+Point 3 I/O:192.168.50.213
+Point 4 I/O:192.168.50.214
+Point 5 I/O:192.168.50.215
+Point 6 I/O:192.168.50.216
+Point 7 I/O:192.168.50.217
+Point 8 I/O:192.168.50.218
+Ethernet Module MANZ:192.168.50.220
