@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="../design/img/olbricht_design_icon.jpg">
+  <title id="pagetitle">layout</title>
+  <link rel="stylesheet" href="/cardinal/styles.css">
+</head>
+
+<body>
+  <div w3-include-html="subpages/sidebar.html"></div>
+  <div class="w3-main" style="margin-left:250px">
+    <div w3-include-html="subpages/header.html"></div>
+
+    <!--  MAIN CONTENT -->
+    <div class="w3-main" style="margin-left:20px">
+      <object width="100%" height="1000" type="application/pdf" data="doc/211.827.01.000.L00.00.e.pdf" id="pdf_content">
+        <p> Something went wrong.. <br> </p>
+      </object>
+    </div>
+    <!--  MAIN CONTENT - END-->
+
+    <script src="hsscript.js"></script>
+  </div>
+</body>
+
+</html>
+
+
+
+
+<script>
+  function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+  }
+
+  function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+</script>
+
+
+</body>
+
+</html>
