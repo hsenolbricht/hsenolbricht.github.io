@@ -14,7 +14,121 @@
 }
 
 .hs-table{width: 100%;}
-.hs-icon{width: 30px; height: 30px;}
+.hs-icon{width: 20px; height: 20px;}
+
+
+.hs-button{
+  display: block;
+  padding: 0.5rem 1rem;
+  width: 13%;
+  background-color: rgb(255, 255, 255); /* Green */
+  border: solid 1px red;
+  border-radius: 20px;
+  color: black;
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 3px 9px #999;
+}
+
+.hs-button_na{
+  width: 13%;
+  background-color: rgb(255, 255, 255); /* Green */
+  border: solid 1px grey;
+  border-radius: 20px;
+  color: black;
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: not-allowed;  
+}
+
+
+
+.hs-button_act{
+  display: block;
+  width: 13%;
+  border: solid 1px red;
+  border-radius: 20px;
+  color: black;
+  padding: 10px 20px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  cursor: pointer;
+
+  background-color:red;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.hs-button:disabled {
+  background-color:green;
+}
+
+.hs-button:hover {
+  background-color:red;
+}
+
+.hs-button:active{
+  
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+
+
+
+
+
+.hs-nav-link {
+  display: block;
+  padding: 0.5rem 1rem;
+}
+
+.hs-nav-link:hover, .hs-nav-link:focus {
+  text-decoration: none;
+}
+
+.hs-nav-link.disabled {
+  color: #6c757d;
+  pointer-events: none;
+  cursor: not-allowed;
+
+  
+}
+
+
+.hs-nav-link.active,
+ {
+  color: #495057;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+
+
+
+
+
+
+
+
+
 
 
 
@@ -27,14 +141,17 @@ footer {
 }
 
 
+
+
+
 .hs-img
 {
-  border:solid red 0px;
+  border:solid red 1px;
   border-radius: 20px;
   margin-left: auto;
   margin-right: auto;
  
-  height: 300px;
+  height: 200px;
 }
 
 
@@ -66,6 +183,49 @@ footer {
     width: 100%;
   }
 }
+
+
+/* BREADCRUMB*/
+/*-------------------------------------------------------------------------*/
+
+/* Style the list */
+ul.breadcrumb {
+  padding: 10px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+  display: inline;
+  font-size: 12px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li+li:before {
+  padding: 8px;
+  color: black;
+  content: ">\00a0";
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+  color: #0275d8;
+  text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+
+/*-------------------------------------------------------------------------*/
+
+
+
+
+
 
 
 
