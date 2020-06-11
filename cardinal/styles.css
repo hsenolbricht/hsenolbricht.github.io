@@ -8,12 +8,11 @@
 
 
 .hs-map{
-  position: absolute;
-  left:50%; 
+  position: relative;
+  left:550px; 
   width: 1000px;
   height: 900px;
-  margin-left: -500px;
- 
+   
 }
 
 
@@ -34,7 +33,7 @@ width: 400px;
 
   width: 100px;
   height: 30px;
-  margin-left: -50px;
+  
 }
 
 /* The actual popup (appears on top) */
