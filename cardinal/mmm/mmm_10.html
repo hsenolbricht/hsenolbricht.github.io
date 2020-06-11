@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="../design/img/olbricht_design_icon.jpg">
+  <title id="pagetitle"></title>
+  <link rel="stylesheet" href="/cardinal/styles.css">
+  <link rel="stylesheet" href="/cardinal/bootstrap_hs.css">
+
+  <!--
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <!--
+    <div w3-include-html="../subpages/sidebar.html"></div>
+    <div class="w3-main" style="margin-left:250px">
+    <div w3-include-html="subpages/header.html"></div>
+-->
+
+  <!--  MAIN CONTENT -->
+
+
+  <!--  HEADER -->
+  <div class="w3-teal">
+    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+    <div class="w3-container">
+      <table style="width:100%">
+        <tr>
+          <th><img src="../img/glasslogo.png" width="170" height="90"> </th>
+          <th>
+            <h1><b>Machine Labels</b>
+              <h1>
+          </th>
+          <th><img src="../img/card.png" style:"left" width="170" height="120"></th>
+        </tr>
+      </table>
+    </div>
+  </div>
+
+
+  
+
+  <!-- Breadcrumb -->
+  <ul class="breadcrumb">
+    <li><a href="/cardinal/index_cm.html">Home</a></li>
+    <li><a href="/cardinal/mmm.html">Maintenance and Mechanics Manuals</a></li>
+    <li> Machine Labels </li>
+  </ul>
+
+
+  <!-- Tab panes -->
+  <div class="tab-content border mb-3" style="margin-left:-500px">
+    <div id="home" class="container tab-pane active"><br>
+      <p>
+        <img src="" alt="" class="hs-img" style="height: 300px;">
+      </p>
+    </div>
+
+<img class="hs-map" src="/cardinal/img/MAP.JPG" alt="">
+
+
+
+
+<button class="popup" style="position: absolute; left:35%; top: 60%" onclick="mypopupFunction(1)"> 110 / S
+<span class="popuptext" id="myPopup1"> test
+   <img class="hs-popupimg" src="/cardinal/img/110S.JPG" alt=""> 
+</span>
+</button>
+
+<button class="popup" style="position: absolute; left:35%; top: 100%" onclick="mypopupFunction(2)"> 110 / N
+  <span class="popuptext" id="myPopup2"> <img src="/cardinal/img/110N.JPG" alt=""> </span> </button>
+
+
+  <button class="popup" style="position: absolute; left:56%; top: 62%" onclick="mypopupFunction(2)"> 123 / S
+    <span class="popuptext" id="myPopup2"> <img src="/cardinal/img/110N.JPG" alt=""> </span> </button>
+  
+  <button class="popup" style="position: absolute; left:56%; top: 66%" onclick="mypopupFunction(2)"> 124 / S
+    <span class="popuptext" id="myPopup2"> <img src="/cardinal/img/110N.JPG" alt=""> </span> </button>
+  
+  <button class="popup" style="position: absolute; left:56%; top: 98%" onclick="mypopupFunction(2)"> 123 / N
+    <span class="popuptext" id="myPopup2"> <img src="/cardinal/img/110N.JPG" alt=""> </span> </button>
+  
+  <button class="popup" style="position: absolute; left:56%; top: 102%" onclick="mypopupFunction(2)"> 124 / N
+    <span class="popuptext" id="myPopup2"> <img src="/cardinal/img/110N.JPG" alt=""> </span> </button>
+
+
+
+<button class="popup" style="position: absolute; left:52%; top: 80%" onclick="mypopupFunction(2)"> 310
+  <span class="popuptext" id="myPopup2"> <img src="/cardinal/img/110N.JPG" alt=""> </span> </button>
+
+<button class="popup" style="position: absolute; left:60%; top: 80%" onclick="mypopupFunction(2)"> 320
+  <span class="popuptext" id="myPopup2"> <img src="/cardinal/img/110N.JPG" alt=""> </span> </button>
+
+<button class="popup" style="position: absolute; left:70%; top: 80%" onclick="mypopupFunction(2)"> 330
+  <span class="popuptext" id="myPopup2"> <img src="/cardinal/img/110N.JPG" alt=""> </span> </button>
+
+
+
+
+
+
+
+
+
+
+<button class="popup" onclick="mypopupFunction(3)">110/S
+  <span class="popuptext" id="myPopup3">
+    <img class="hs-map" src="/cardinal/img/MAP.JPG" alt="">
+    Popup text.2..</span>
+</button>
+<!--
+<button class="hs-110S" onclick="mypopupFunction(1)">Click me!
+  <span class="popuptext" id="myPopup1">
+    Popup text dd...</span>
+  </button>
+-->
+
+<script>
+  // When the user clicks on <div>, open the popup
+    var x = 0
+    function mypopupFunction(x) {
+    var popup = document.getElementById("myPopup" + x);
+    popup.classList.toggle("show");
+  }
+  </script>
+
+
+
+
+
+
+
+
+
+
+
+
+<!--
+  <p class="act"><b>Active Tab</b>: <span></span></p>
+  <p class="prev"><b>Previous Tab</b>: <span></span></p>
+-->
+  </div>
+
+  <!-- MAIN CONTENT - END-->
+
+
+  <script>
+    $(document).ready(function () {
+      $(".nav-tabs a").click(function () {
+        $(this).tab('show');
+      });
+      $('.nav-tabs a').on('shown.bs.tab', function (event) {
+        var x = $(event.target).text();         // active tab
+        var y = $(event.relatedTarget).text();  // previous tab
+        $(".act span").text(x);
+        $(".prev span").text(y);
+      });
+    });
+  </script>
+
+  <script src="../hsscript.js"></script>
+  </div>
+</body>
+
+</html>
