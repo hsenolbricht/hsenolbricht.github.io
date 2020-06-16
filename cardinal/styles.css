@@ -31,7 +31,9 @@ width: 400px;
  
   display: inline-block;
   cursor: pointer;
-
+  border: solid 2px darkred;
+  border-radius: 15px;
+  font-weight: bold;
   width: 100px;
   height: 30px;
   
