@@ -8,9 +8,12 @@
 		},
 		{
 			"path": "..\\..\\snhakan.github.io"
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\Download\\bootstrap-login-forms\\form-2"
 		}
 	],
 	"settings": {
-		"liveServer.settings.multiRootWorkspaceName": "hsenolbricht.github.io"
+		"liveServer.settings.multiRootWorkspaceName": "form-2"
 	}
 }
