@@ -16,7 +16,10 @@
    
 }
 
-
+.hs-img-border{
+  border: transparent 2px;
+  border-radius: 100px;
+}
 
 
 
