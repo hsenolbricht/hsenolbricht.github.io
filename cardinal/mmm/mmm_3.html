@@ -1,71 +1,152 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="../styles.css">
-    </head>
+<html lang="eng">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" href="../design/img/olbricht_design_icon.jpg">
+  <title id="pagetitle"></title>
+  <link rel="stylesheet" href="/cardinal/styles.css">
+  <link rel="stylesheet" href="/cardinal/bootstrap_hs.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+</head>
+
 <body>
-<!-- SIDE BAR-->
-  <div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="width:300px; " id="mySidebar">
-    <button class="w3-bar-item w3-button w3-hide-large" onclick="w3_close()">Close &times;</button>
-    <div class="w3-container">  
-     <h2><img src="../img/glasslogo.png" alt="Olbricht"  width="170" height="90"></h2>
+  <!--  HEADER -->
+  <div class="w3-teal">
+    <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+    <div class="w3-container">
+      <table style="width:100%">
+        <tr>
+          <th><img src="../img/glasslogo.png" width="170" height="90"> </th>
+          <th>
+            <h1><b>Periodic Maintenance chart</b>
+              <h1>
+          </th>
+          <th><img src="../img/card.png" style:"left" width="170" height="120"></th>
+        </tr>
+      </table>
     </div>
-    <a href="../main.html" class="w3-bar-item w3-button">HOME</a>
-    <a href="../mmm.html" class="w3-bar-item w3-button">Maintenance and Mechanics Manuals</a>
-      <ol>
-        <li><a href="../mmm/mmm_1.html" class="w3-bar-item w3-button">Assembly instructions</a> </li>
-        <li><a href="../mmm/mmm_2.html" class="w3-bar-item w3-button">Pretentative maintanance</a> </li>
-        <li><a href="../mmm/mmm_3.html" class="w3-bar-item w3-button">Periodic maintenance chart</a> </li>
-        <li><a href="../mmm/mmm_4.html" class="w3-bar-item w3-button">Part & Spare part list</a> </li>
-        <li><a href="../mmm/mmm_5.html" class="w3-bar-item w3-button">Trouble shooting</a> </li>
-        <li><a href="../mmm/mmm_6.html" class="w3-bar-item w3-button">Transport instructions</a> </li>
-        <li><a href="../mmm/mmm_7.html" class="w3-bar-item w3-button">Risk management matrix</a> </li>
-        <li><a href="../mmm/mmm_8.html" class="w3-bar-item w3-button">Assembly drawings</a> </li>
-      </ol>
   </div>
-  
-  <div class="w3-main" style="margin-left:300px">
-<!--  HEADER -->
-    <div class="w3-teal">
-       <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
-        <div class="w3-container">
-            <table style="width:100%">
-              <tr>
-                <th><img src="../img/glasslogo.png"  width="170" height="90"> </th>
-                <th> <h1><b> Periodic Maintenance chart </b><h1></th>
-                <th><img src="../img/card.png"  style:"left" width="170" height="120"></th>
-              </tr>
-            </table>
 
 
-            <a class="hs-button" href="../mmm/PMC_1.html"> 110 <br> Turntable</a>
-            <a class="hs-button" href="../mmm/PMC_2.html"> 123-223-553 <br> Big Gripper</a>
-            <a class="hs-button" href="../mmm/PMC_3.html"> 124-224-554 <br> Small Gripper </a>
-            <a class="hs-button" href="../mmm/PMC_4.html"> 125-225-555 <br> Tool Rack</a>
-            <a class="hs-button" href="../mmm/PMC_5.html"> 320 <br> Lazer Marker</a>
-            <a class="hs-button" href="../mmm/PMC_6.html"> 123-223-553 <br> Big Gripper</a>
-            <a class="hs-button" href="../mmm/PMC_7.html"> 640 <br> PVB Conveyor</a>
-    
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs">
+
+    <li class="nav-item">
+      <a class="nav-link" href="#menu1">110 <br> Turntable</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#menu2">123-223-553 <br> Big Gripper</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#menu3">124-224-554 <br> Small Gripper</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#menu4">125-225-555 <br> Tool Rack</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#menu5">310-330-420-510-515 <br> Conveyors</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#menu6">320 <br> Lazer Marker</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#menu7">640 <br> PVB Conveyor</a>
+    </li>
+  </ul>
+
+  <!-- Breadcrumb -->
+  <ul class="breadcrumb">
+    <li><a href="/cardinal/index_cm.html">Home</a></li>
+    <li><a href="/cardinal/mmm.html">Maintenance and Mechanics Manuals</a></li>
+    <li> Periodic Maintenance Chart </li>
+  </ul>
 
 
-
-
-          </div>
-<br>
-          <img src="../img/periodic.png" alt="maintanance" class="center" >
-
+  <!-- Tab panes -->
+  <div class="tab-content border mb-3" style="margin-left:-500px">
+    <div id="home" class="container tab-pane active"><br>
+      <p>
+        <img src="/cardinal/img/periodic.png" alt="" class="hs-img" style="height: 300px;">
+      </p>
+    </div>
+    <div id="menu1" class="container tab-pane "><br>
+      <p>
+        <iframe width="100%" height="1000px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTBdFVpQh3PTxNQFe1MdX49KCeWPWGLHOzA_JLiZPnT1F28BCq0RPTTc0IkL5nUzKdXywvOK04SWLLe/pubhtml?gid=371391023&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+      </p>
     </div>
 
+    <div id="menu2" class="container tab-pane "><br>
+      <p>
+        <iframe width="100%" height="1000px"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vTuaeKJTJ8FsP2in2880Kxlw7e9u67phCk6ll4KozIYbn5lTqplXUTKh9FuZl4updMrt32E_aH9QByl/pubhtml?gid=371391023&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+      </p>
+    </div>
 
-    <script>
-      function w3_open() {
-        document.getElementById("mySidebar").style.display = "block";
-      }
-      
-      function w3_close() {
-        document.getElementById("mySidebar").style.display = "none";
-      }
-      </script>  
+    <div id="menu3" class="container tab-pane "><br>
+      <p>
+        <iframe width="100%" height="1000px"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQK8NpZHiqOL7-r20k9ApS5pWhaCl1UiuOZGBIw11aT_LGx63gOtp7rNZhb1eTjt7VMVMVmII4wwBT1/pubhtml?gid=371391023&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+      </p>
+    </div>
+  
+  
+    <div id="menu4" class="container tab-pane "><br>
+      <p>
+        <iframe width="100%" height="1000px"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vT6JWPoKKwUCMoYDVRQPZ7WZEuq9rMM3MvcWFA3eqcwoMyrbEK80rERw7xBfZ6pVdasrfjdUbAzKjr_/pubhtml?gid=371391023&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+      </p>
+    </div>
+  
+  
+    <div id="menu5" class="container tab-pane "><br>
+      <p>
+        <iframe width="100%" height="1000px"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQGXZAVfYX9bFYGZdS4L0_vAho31-YI9W4IbFxffA40KVIJHuhuQ5jSDzfafLvk3WyVWqSLZLM0KcQv/pubhtml?gid=371391023&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+      </p>
+    </div>
+  
+  
+    <div id="menu6" class="container tab-pane "><br>
+      <p>
+        <iframe width="100%" height="1000px"
+          src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS-PP8pFmF5EWGhd6ahdzcQU-ZgDvUcQQpubVKhg8CPq1UaHZqQ1S9tfVW0tfMPKyK9VW0tpa6WRvna/pubhtml?gid=371391023&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+      </p>
+    </div>
+  
 
+    <div id="menu7" class="container tab-pane fade"><br>
+      <p>
+        <iframe width="100%" height="1000px" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQRmFRVUa-lgphTpkwx8nU9_GiMvbsO3jq_ZCkmn2fVMcFqHooAYrtZK7_wTzS9ki-XUgx03lZRaJf7/pubhtml?gid=371391023&amp;single=true&amp;widget=true&amp;headers=false"></iframe>
+
+      </p>
+    </div>
+  </div>
+  </div>
+
+  <!-- MAIN CONTENT - END-->
+
+
+  <script>
+    $(document).ready(function () {
+      $(".nav-tabs a").click(function () {
+        $(this).tab('show');
+      });
+      $('.nav-tabs a').on('shown.bs.tab', function (event) {
+        var x = $(event.target).text();         // active tab
+        var y = $(event.relatedTarget).text();  // previous tab
+        $(".act span").text(x);
+        $(".prev span").text(y);
+      });
+    });
+  </script>
+
+  <script src="../hsscript.js"></script>
+  </div>
 </body>
+
 </html>
