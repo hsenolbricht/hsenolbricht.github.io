@@ -2,27 +2,18 @@
 
 <html>
     <head>
-        <link rel="stylesheet" href="styles.css">
+      <meta charset="UTF-8" />
+      <link rel="icon" href="../design/img/olbricht_design_icon.jpg">
+      <title id="pagetitle">layout</title>
+      <link rel="stylesheet" href="styles.css">
     </head>
-  
+    </head>
+
 <body>
-    
+  <div w3-include-html="subpages/sidebar.html"></div>
+  <!-- <div class="w3-main" style="margin-left:250px"> -->
+  <!-- <div w3-include-html="subpages/header.html"></div> -->
 
-
-     <!-- SIDE BAR-->
-  <div class="w3-sidebar w3-bar-block w3-collapse w3-card" style="width:250px;" id="mySidebar">
-    <button class="w3-bar-item w3-button w3-hide-large" onclick="w3_close()">Close &times;</button>
-    <div class="w3-container">  
-     <h2><img src="img/glasslogo.png" alt="Olbricht"  width="170" height="90"></h2>
-    </div>
-    <a href="main.html" class="w3-bar-item w3-button">HOME</a>
-    <a href="adm.html" class="w3-bar-item w3-button" style="color: red;" >Automation Documents & Manuals</a>
-    <a href="mmm.html" class="w3-bar-item w3-button">Maintenance and Mechanics Manuals</a>
-    <a href="rmd.html" class="w3-bar-item w3-button" style="color: red;">Robot Manuals</a>
-    <a href="cad.html" class="w3-bar-item w3-button">CAD</a>
-    <a href="FP.html" class="w3-bar-item w3-button">Foundation Plan </a>
-  </div>
-  
 
 
 
@@ -31,30 +22,26 @@
 
     <!--  HEADER -->
     <div class="w3-teal">
-       <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
-        <div class="w3-container">
-          <h2>
-            
-            <table style="width:100%">
-              <tr>
-                <th><img src="img/glasslogo.png"  width="170" height="90"> </th>
-                <th>
-                  <b>OLBRICHT Automation GmbH </b><br>
-                  <th>
-                  <b>CARDINAL Glass </b>
-                  </th>
-                </th>
-                <th><img src="img/card.png"  style:"left" width="170" height="120"></th>
-              </tr>
-            </table>
-
-          </h2>
-            
-          
-        </div>
+      <button class="w3-button w3-teal w3-xlarge" onclick="w3_open()">&#9776;</button>
+      <div class="w3-container">
+        <table style="width:100%">
+          <tr>
+            <th><img src="img/glasslogo.png" width="170" height="90"> </th>
+            <th>
+              <h1><b>Foundation Plan </b></h1>
+            </th>
+            <th><img src="img/card.png" style:"left" width="170" height="120"></th>
+          </tr>
+        </table>
+      </div>
     </div>
 
+  <!-- Breadcrumb -->
+  <ul class="breadcrumb">
+    <li><a href="index_cm.html">Home</a></li>
+    <li>Foundation Plan</li>
 
+</ul>
 
 
 
@@ -72,24 +59,24 @@
 <div class="w3-main" style="margin-left:20px">
 
   <iframe src="https://drive.google.com/open?id=1Dq_6xsLcdOyD-cXXZjRgeu1Dy5ui8htg-rh44_8hogY" width="100%" height="1500" style="border: none;"></iframe>
-      
+
 <object width="100%" height="1500" type="application/pdf" data="https://drive.google.com/open?id=1Dq_6xsLcdOyD-cXXZjRgeu1Dy5ui8htg-rh44_8hogY" id="pdf_content">
     <p> Something went wrong.. <br> Please ask Hakan ŞEN</p>
     </object>
 </div>
 -->
 
-
+<script src="hsscript.js"></script>
 
     <script>
       function w3_open() {
         document.getElementById("mySidebar").style.display = "block";
       }
-      
+
       function w3_close() {
         document.getElementById("mySidebar").style.display = "none";
       }
-      </script>  
+      </script>
 
 
 
