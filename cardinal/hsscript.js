@@ -42,7 +42,7 @@ function includeHTML() {
 includeHTML(); 
 
 
-// function headerindex(){
-//     document.getElementById("headertitle").innerHTML = "hakan";
-// }
-// headerindex();
+function headerindex(titleh){
+    document.getElementById("headertitle").innerHTML = titleh;
+}
+
